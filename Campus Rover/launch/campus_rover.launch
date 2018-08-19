@@ -1,0 +1,20 @@
+<launch>
+    <arg name="localization" default="true"/>
+
+	<include file="$(find turtlebot_bringup)/launch/minimal.launch" />
+	<include file="$(find turtlebot_bringup)/launch/3dsensor.launch" />
+	<include file="$(find campus_rover)/launch/campus_rover_rtab.launch" >
+		<arg name="localization" value="$(arg localization)" />
+	</include>
+	<include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch" />
+	<include file="$(find apriltags2_ros)/launch/continuous_detection.launch" />
+
+	<node pkg="campus_rover" type="tag_localization.py" name="tag_localization" output="screen" />
+	<node pkg="campus_rover" type="robot_vitals.py" name="robot_vitals" output="screen" />
+	<node pkg="campus_rover" type="waypoint_server.py" name="waypoint_server" output="screen" />
+	
+ 	<node pkg="web_video_server" type="web_video_server" name="web_video_server" output="screen" launch-prefix="gnome-terminal --command" >
+		<param name="address" type="str" value="129.64.143.109"/>
+	</node>
+
+</launch>

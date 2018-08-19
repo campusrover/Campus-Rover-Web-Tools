@@ -1,0 +1,7 @@
+<launch>
+	<include file="$(find turtlebot_bringup)/launch/minimal.launch" />
+	<include file="$(find campus_rover)/launch/campus_rover_amcl.launch" />
+	<include file="$(find apriltags2_ros)/launch/continuous_detection.launch" />
+	<include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch" />
+	<include file="$(find turtlebot_rviz_launchers)/launch/view_navigation.launch" />
+</launch>

@@ -1,0 +1,26 @@
+[
+	{
+		"name": "Shwartz 103",
+		"location": {
+			"x": 2.5,
+			"y": 0.5,
+			"z": 0
+		}
+	},
+	{
+		"name": "Schwartz Lobby",
+		"location": {
+			"x": -4.5,
+			"y": 1.3,
+			"z": 0
+		}
+	},
+	{
+		"name": "volen 101",
+		"location": {
+			"x": 1.8,
+			"y": 0.754,
+			"z": 0
+		}
+	}
+]
