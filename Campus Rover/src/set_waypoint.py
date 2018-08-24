@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 
+# A script for navigating to waypoints. To use the script, a premade map is necessary. Within the premade map, coordiantes can be taken and
+# stored in the `waypoints variable below`. With the waypoint configured, goal destinations can be set for the campus rover to navigate to.
+
 import rospy
 import actionlib
 from move_base_msgs.msg import MoveBaseAction, MoveBaseGoal

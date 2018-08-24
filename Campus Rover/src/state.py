@@ -1,4 +1,9 @@
 #!/usr/bin/env python
+
+# State management node for the Campus Rover. The purpose of this script is to provide the rover with some way to track
+# its state and react accordingly. This script will publish the state for use in other nodes, to check if the robot is
+# in a legal state to take certain actions
+
 import rospy
 from std_msgs.msg import Int32, String
 

@@ -1,4 +1,9 @@
 #!/usr/bin/env python
+
+# Script for localizing the Campus Rover using April Tags. For this script to work, tags
+# need to be postioned on a premade map and coordiantes need to be found (these are then stored
+# in sendTransform call at the end of the script, currently hardcoded for testing).
+
 import rospy
 import tf
 from tf import TransformerROS, Transformer 

@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 
+# Provides information on the state of the robot, such as the battery level, laptop battery level,
+# and whether the robot / laptop is charging or not
+
 import rospy
 from diagnostic_msgs.msg import DiagnosticArray
 from std_msgs.msg import Float32, Bool

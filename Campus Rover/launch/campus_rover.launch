@@ -1,3 +1,7 @@
+<!-- 
+	Launches the Campus Rover with rtab and starts up the web server. This allows
+	users to connect to the robot from the web client.
+-->
 <launch>
     <arg name="localization" default="true"/>
 

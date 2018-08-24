@@ -1,7 +1,10 @@
+<!-- 
+	Launches the Campus Rover with the standard SLAM demo and web server. This launch
+	file is primarily used to create maps for navigation with AMCL by teleoping through
+	the web client.
+-->
 <launch>
-
 	<include file="$(find turtlebot_bringup)/launch/minimal.launch" />
 	<include file="$(find rtabmap_ros)/launch/demo/demo_turtlebot_mapping.launch" />
 	<include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch" />
-
 </launch>

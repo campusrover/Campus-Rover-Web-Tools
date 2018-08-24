@@ -1,4 +1,7 @@
 #!/usr/bin/env python
+
+# Handles navigation to waypoints, stored in the waypoints.json file on the Campus Rover
+
 import rospy
 from move_base_msgs.msg import *
 from yocs_msgs.msg import Waypoint, WaypointList

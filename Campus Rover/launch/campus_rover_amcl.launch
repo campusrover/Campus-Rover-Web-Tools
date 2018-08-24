@@ -1,3 +1,8 @@
+<!-- 
+  Launches the campus rover with AMCL for navigation. AMCL requies a a premade map stored as a YAML file,
+  which should them be passed into as the "map_file" argument below. To create a map, use a navigation
+  algorithm such as SLAM.
+-->
 <launch>
   <!-- 3D sensor -->
   <arg name="3d_sensor" default="$(env TURTLEBOT_3D_SENSOR)"/>  <!-- r200, kinect, asus_xtion_pro -->
