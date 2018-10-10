@@ -30,3 +30,20 @@ On the TurtleBot2:
 On Other Machine:
     Launch RViz to begin giving goal poses:
         1) `roslaunch turtlebot_rviz_launchers view_navigation.launch --screen`
+
+
+Notes on LiveMap Dependencies
+
+    1) roslibjs
+        - Script URL: https://static.robotwebtools.org/roslibjs/current/roslib.js
+        - Wiki: http://wiki.ros.org/roslibjs
+        - roslibjs is a javascript library that allows web interfacing with ROS.
+        - Includes methods to publish, subscribe, etc.
+        - Uses rosbridge to establish a websocket connection with a robot.
+
+    2) ros2djs
+        - Script URL: https://static.robotwebtools.org/ros2djs/current/ros2d.js
+        - Wiki: http://wiki.ros.org/ros2djs
+        - ros2djs is a javascript library built ontop of roslibjs to support 2D visualizations.
+        - Specifically, ros2djs uses an occupancy grid to generate a 2D map visualization,
+          including an arrow image representing the robot's location on the map.
