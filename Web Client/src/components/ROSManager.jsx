@@ -19,7 +19,7 @@ class ROSManager extends React.Component {
   }
   
   configureRos = (ip, port) => {
-
+    
     var ros = new ROSLIB.Ros({
       url : 'ws://' + ip + ':' + port
     });
@@ -82,7 +82,7 @@ class ROSManager extends React.Component {
 
   publishVelocityData = () => {
     var ros = this.state.ros
-    if (!ros || (this.props.linearVelocity === 0 && this.props.angularVelocity === 0)) { return }
+    if (!ros || (this.state.linearVelocity === 0 && this.state.angularVelocity === 0)) { return }
 
     var cmdVel = new ROSLIB.Topic({
       ros : ros,
@@ -92,14 +92,14 @@ class ROSManager extends React.Component {
 
     var twist = new ROSLIB.Message({
       linear : {
-        x : this.props.linearVelocity,
+        x : this.state.linearVelocity,
         y : 0,
         z : 0
       },
       angular : {
         x : 0,
         y : 0,
-        z : this.props.angularVelocity
+        z : this.state.angularVelocity
       }
     });
     cmdVel.publish(twist);
