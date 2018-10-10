@@ -14,7 +14,7 @@ rospy.init_node('waypoint_server')
 
 def waypoint_list(arg):
 	dir_path = os.path.dirname(os.path.realpath('waypoints.json'))
-	data = json.load(open('/Users/Ari/Dropbox/Robotics/catkin_ws/src/Campus-Rover-Web-Tools/Campus Rover/src/waypoints.json'))
+	data = json.load(open('/home/turtlebot/turtlebot_ws/src/campus_rover/src/waypoints.json'))
 	waypoints = []
 	for waypoint in data:
 
