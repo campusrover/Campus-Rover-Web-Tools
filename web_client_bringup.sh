@@ -22,4 +22,4 @@
 # --tab -e '/bin/bash -c "sleep 10; roslaunch rosbridge_server rosbridge_websocket.launch"'
 
 
-gnome-terminal --tab -e '/bin/bash -c "roscore"' --tab -e '/bin/bash -c "sleep 10; roslaunch turtlebot_bringup concert_client.launch"' --tab -e '/bin/bash -c "sleep 10; rosrun map_server map_server /home/turtlebot/testmap.yaml"' --tab -e '/bin/bash -c "sleep 10; export TURTLEBOT_MAP_FILE=/home/turtlebot/testmap.yaml; roslaunch turtlebot_navigation amcl_demo.launch"' --tab -e '/bin/bash -c "sleep 10; roslaunch rosbridge_server rosbridge_websocket.launch"'
+gnome-terminal --tab -e '/bin/bash -c "roscore"' --tab -e '/bin/bash -c "sleep 10; roslaunch turtlebot_bringup concert_client.launch"' --tab -e '/bin/bash -c "sleep 10; rosrun map_server map_server /home/turtlebot/testmap.yaml"' --tab -e '/bin/bash -c "sleep 10; export TURTLEBOT_MAP_FILE=/home/turtlebot/testmap.yaml; roslaunch turtlebot_navigation amcl_demo.launch"' --tab -e '/bin/bash -c "sleep 10; roslaunch rosbridge_server rosbridge_websocket.launch"' --tab -e '/bin/bash -c "npm start --prefix /home/turtlebot/turtlebot_ws/src/Campus-Rover-Web-Tools"'
